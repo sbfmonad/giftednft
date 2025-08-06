@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GiftedNft</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" class="logo" alt="GiftedNft Logo" />
-    <h1>GiftedNft</h1>
+  <header class="site-header">
+    <div class="logo-container">
+      <!-- Logo resminizi koyduğunuz dosyanın adını logo.png olarak ayarlayın -->
+      <img src="logo.png" alt="GiftedNft Logo" class="logo">
+      <span class="site-title">GiftedNft</span>
+    </div>
   </header>
 
-  <main>
-    <section class="mint-panel">NFT Oluştur</section>
-    <section class="deposit-panel">NFT’ye Para Yükle</section>
-    <section class="nft-list">NFT Listesi</section>
+  <!-- Dalgali dekoratif şerit -->
+  <div class="scallop"></div>
+
+  <main class="main-content">
+    <!-- 1. Bölüm: NFT Oluştur -->
+    <section class="card card1">
+      <div class="icon">&#x1F5BC;</div>
+      <h2>Create NFT</h2>
+    </section>
+    <!-- 2. Bölüm: NFT’ye Para Yatır -->
+    <section class="card card2">
+      <div class="icon">&#x1F4B0;</div>
+      <h2>Deposit Funds</h2>
+    </section>
+    <!-- 3. Bölüm: NFT’den Para Çek -->
+    <section class="card card3">
+      <div class="icon">&#x1F4B3;</div>
+      <h2>Withdraw Funds</h2>
+    </section>
   </main>
 </body>
 </html>
+

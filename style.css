@@ -1,34 +1,86 @@
+/* Sayfa arkaplanı ve genel ayarlar */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8ece0; /* kaymak-karamel */
-  color: #333;
+  font-family: 'Georgia', serif;
+  background-color: #f6e5ce; /* krem-karamel ton */
+  color: #4d3a3a;
 }
-header {
-  background-color: #b8e6f0; /* turkuaz */
+
+/* Üst başlık alanı */
+.site-header {
+  background-color: #b8e6f0; /* turkuaz başlık */
+  padding: 20px 40px;
+}
+
+/* Logo ve başlık */
+.logo-container {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
 }
+
 .logo {
+  width: 60px;
   height: 60px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
-h1 {
+
+.site-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #305050;
+}
+
+/* Dalgali şerit */
+.scallop {
+  height: 20px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #b8e6f0 0,
+    #b8e6f0 10px,
+    #f6e5ce 10px,
+    #f6e5ce 20px
+  );
+}
+
+/* Ana içerik alanı */
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+/* Kartların genel ayarları */
+.card {
+  width: 30%;
+  padding: 30px;
+  border: 5px solid #e0b880;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Kart başlıkları */
+.card h2 {
+  margin-top: 20px;
   font-size: 28px;
 }
-.mint-panel {
-  background-color: #e5d6ff; /* mor */
-  padding: 20px;
-  margin: 20px;
+
+/* Bölüm renkleri */
+.card1 {
+  background-color: #e8d8f8; /* pastel mor */
 }
-.deposit-panel {
-  background-color: #d2f7f2; /* açık turkuaz */
-  padding: 20px;
-  margin: 20px;
+
+.card2 {
+  background-color: #ccf5ec; /* pastel turkuaz */
 }
-.nft-list {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px;
+
+.card3 {
+  background-color: #f9ddb5; /* pastel şeftali */
 }
+
+/* İkonlar */
+.icon {
+  font-size: 60px;
+  color: #865cf3;
+}
+
